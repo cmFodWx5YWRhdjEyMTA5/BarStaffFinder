@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--Header-->
+    <TextView
+        android:id="@+id/tv_personal_information"
+        android:paddingLeft="@dimen/cavs_10dp_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cavs_accent_material_dark"
+        android:text="@string/cavs_personal_information"
+        android:textSize="@dimen/cavs_content_information_header_text_size"
+        android:textColor="@color/cavs_neutral"
+        android:textStyle="italic"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_personal_information"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/neutral_container"
+        android:padding="@dimen/cavs_5dp_spacing"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:id="@+id/ll_fname_lname"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!--First Name-->
+            <EditText
+                android:id="@+id/et_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                android:layout_marginLeft="@dimen/cavs_second_indent"
+                android:layout_marginStart="@dimen/cavs_second_indent"
+                android:layout_marginRight="@dimen/cavs_second_indent"
+                android:layout_marginEnd="@dimen/cavs_second_indent"
+                android:layout_marginBottom="@dimen/cavs_5dp_spacing"
+                android:padding="@dimen/cavs_5dp_spacing"
+                android:hint="@string/cavs_hint_fname"
+                android:textColorHint="@color/cavs_hint_text_dark"
+                android:inputType="text"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_primary_dark"
+                android:ems="10"
+                android:layout_weight="1"
+                android:theme="@style/EditTextLine"
+                android:background="@drawable/textview_style" />
+
+            <!--Last Name-->
+            <EditText
+                android:id="@+id/et_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/cavs_second_indent"
+                android:layout_marginEnd="@dimen/cavs_second_indent"
+                android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                android:layout_marginBottom="@dimen/cavs_5dp_spacing"
+                android:padding="@dimen/cavs_5dp_spacing"
+                android:hint="@string/cavs_hint_lname"
+                android:textColorHint="@color/cavs_hint_text_dark"
+                android:inputType="text"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_primary_dark"
+                android:ems="10"
+                android:layout_weight="1"
+                android:theme="@style/EditTextLine"
+                android:background="@drawable/textview_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dob_gender"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!--Date of Birth-->
+            <EditText
+                android:id="@+id/et_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                android:layout_marginLeft="@dimen/cavs_second_indent"
+                android:layout_marginStart="@dimen/cavs_second_indent"
+                android:layout_marginRight="@dimen/cavs_second_indent"
+                android:layout_marginEnd="@dimen/cavs_second_indent"
+                android:padding="@dimen/cavs_5dp_spacing"
+                android:hint="@string/cavs_hint_dob"
+                android:textColorHint="@color/cavs_hint_text_dark"
+                android:inputType="date"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_primary_dark"
+                android:ems="10"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:theme="@style/EditTextLine"
+                android:background="@drawable/textview_style" />
+
+            <!--Gender-->
+            <Spinner
+                android:id="@+id/spn_gender"
+                android:layout_width="@dimen/cavs_spinner_width"
+                android:layout_height="@dimen/cavs_spinner_height"
+                android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                android:layout_marginRight="@dimen/cavs_second_indent"
+                android:layout_marginEnd="@dimen/cavs_second_indent"
+                android:entries="@array/gender"
+                android:background="@color/cavs_dark_primary_light"
+                android:gravity="center_vertical|start"
+                android:popupBackground="@color/cavs_primary_dark"
+                android:ems="10"
+                android:layout_weight="0.55"
+                android:layout_marginBottom="@dimen/cavs_second_indent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_postcode"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!--First Name-->
+            <EditText
+                android:id="@+id/et_postcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cavs_second_indent"
+                android:layout_marginStart="@dimen/cavs_second_indent"
+                android:layout_marginRight="@dimen/cavs_second_indent"
+                android:layout_marginEnd="@dimen/cavs_second_indent"
+                android:layout_marginBottom="@dimen/cavs_5dp_spacing"
+                android:padding="@dimen/cavs_5dp_spacing"
+                android:hint="@string/cavs_hint_postcode"
+                android:textColorHint="@color/cavs_hint_text_dark"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_primary_dark"
+                android:ems="10"
+                android:layout_weight="1"
+                android:theme="@style/EditTextLine"
+                android:background="@drawable/textview_style" />
+
+            <!--Last Name-->
+            <EditText
+                android:id="@+id/po"
+                android:visibility="invisible"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/cavs_second_indent"
+                android:layout_marginEnd="@dimen/cavs_second_indent"
+                android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                android:layout_marginBottom="@dimen/cavs_5dp_spacing"
+                android:padding="@dimen/cavs_5dp_spacing"
+                android:hint="@string/cavs_hint_lname"
+                android:textColorHint="@color/cavs_hint_text_dark"
+                android:inputType="text"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_primary_dark"
+                android:ems="10"
+                android:layout_weight="1"
+                android:theme="@style/EditTextLine"
+                android:background="@drawable/textview_style" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

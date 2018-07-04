@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/cavs_chat_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/cavs_neutral"
+        android:background="@color/cavs_accent_material_dark"
+        android:padding="@dimen/cavs_10dp_spacing"/>
+
+    <RelativeLayout
+        android:id="@+id/negotiator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/cavs_10dp_spacing"
+        android:background="@drawable/negotiator_bg"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioGroup
+            android:id="@+id/toggle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/cavs_toggle_spacing"
+            android:layout_marginRight="@dimen/cavs_toggle_spacing"
+            android:layout_marginStart="@dimen/cavs_toggle_spacing"
+            android:layout_marginEnd="@dimen/cavs_toggle_spacing"
+            android:background="@drawable/toggle_out_line"
+            android:checkedButton="@+id/hourly"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/cavs_10dp_spacing">
+
+            <RadioButton
+                android:id="@+id/hourly"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/cavs_1dp_spacing"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/cavs_chat_hourly"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/sum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/cavs_1dp_spacing"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/cavs_chat_sum"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/et_chat_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toggle"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/textview_style"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Value"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/cavs_10dp_spacing" />
+
+        <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/et_chat_offer">
+
+            <Button
+                android:id="@+id/bt_chat_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cavs_5dp_spacing"
+                android:layout_weight="1"
+                android:background="@drawable/button_style_neutral"
+                android:text="@string/cavs_btn_offer" />
+
+            <Button
+                android:id="@+id/bt_chat_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cavs_5dp_spacing"
+                android:layout_weight="1"
+                android:background="@drawable/button_style_red"
+                android:text="@string/cavs_btn_accept"
+                android:textColor="@color/white" />
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/chat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/negotiator"
+        android:layout_above="@+id/bottom"
+        android:dividerHeight="@dimen/cavs_10dp_spacing"
+        android:divider="@null"
+        android:padding="@dimen/cavs_10dp_spacing" >
+
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/neutral_container"
+        android:id="@+id/bottom">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/cavs_hint_chat_message"
+            android:background="@drawable/textview_style"
+            android:id="@+id/et_chat_message"
+            android:layout_margin="@dimen/cavs_5dp_spacing"
+            android:padding="@dimen/cavs_10dp_spacing"/>
+
+        <Button
+            android:text="@string/cavs_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_style_red"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/cavs_5dp_spacing"
+            android:id="@+id/message_send" />
+    </LinearLayout>
+</RelativeLayout>

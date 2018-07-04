@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="MenuAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+    <style name="EditTextLine">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">#7b7b7b</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+    </style>
+
+    <style name="date_picker_theme" parent="@android:style/Widget.DatePicker"/>
+    <!-- changes the default colours for EditTexts, including non-text elements (also works with the DatePicker -->
+
+    <style name="appCompatStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:editTextStyle">@style/editTextStyle</item>
+    </style>
+
+
+    <!-- changes the default text colour for the EditTexts -->
+    <style name="editTextStyle" parent="android:style/Widget.EditText">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!--Form's text style , a global-->
+    <style name="FormTheme" parent="android:Theme">
+        <item name="android:textViewStyle">@style/FormTextViewStyle</item>
+    </style>
+
+    <style name="FormTextViewStyle" parent="android:Widget.TextView">
+        <!--item name="android:textColor">@color/black</item-->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyTabStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="Theme.appCompatStyle.NoActionBar" parent="Theme.AppCompat.NoActionBar" >
+        <item name="android:colorBackground">@color/background_material_dark</item>
+    </style>
+
+    <style name="Cavs_theme_mlb" parent="Theme.appCompatStyle.NoActionBar" >
+
+    </style>
+
+</resources>
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Header-->
+    <TextView
+        android:id="@+id/tv_aboutme_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cavs_accent_material_dark"
+        android:text="@string/cavs_aboutme_header"
+        android:textSize="@dimen/cavs_content_information_header_text_size"
+        android:textColor="@color/cavs_neutral"
+        android:paddingLeft="@dimen/cavs_10dp_spacing"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/ll_aboutme_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/neutral_container"
+        android:orientation="vertical"
+        android:padding="@dimen/cavs_5dp_spacing"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/et_shortsummary_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/cavs_10dp_spacing"
+            android:hint="@string/cavs_hint_shortsummary"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="textMultiLine"
+            android:textColor="@color/cavs_secondary_text_dark"
+            android:textSize="@dimen/cavs_general_text_size"
+            android:ems="10"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

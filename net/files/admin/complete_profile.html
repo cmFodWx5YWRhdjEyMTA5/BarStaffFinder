@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Complete Profile</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template CSS -->
+        <link href="css/sb-admin.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- MylocalBartender CSS -->
+        <link href="css/mylocalbartender.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- MyLocalBartender Core JavaScript -->
+        <script src="public/js/mylocalbartender.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-link" href="/api/admin/">My Local Bartender</a>
+                </div>
+                <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav side-nav">
+                        <li>
+                            <a href="./" class="page-link">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#">Tables <i class="fa fa-fw fa-caret-down"></i></a>
+                            <ul id="table-drop-down" class="panel-collapse collapse in">
+                                <li>
+                                    <a href="./tables%20online" class="page-link">Online Users</a>
+                                </li>
+                                <li>
+                                    <a href="./tables%20job" class="page-link">Job Table</a>
+                                </li>
+                                <li>
+                                    <a href="./tables%20user" class="page-link">User Table</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#">Admin Managment Tools <i class="fa fa-fw fa-caret-down"></i></a>
+                            <ul id="tools-drop-down" class="panel-collapse collapse in">
+                                <li>
+                                    <a href="./add%20admin" class="page-link">Add Admin</a>
+                                </li>
+                                <li>
+                                    <a href="./delete%20job" class="page-link">Delete Job</a>
+                                </li>
+                                <li>
+                                    <a href="./delete%20account" class="page-link">Delete Account</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+            
+            <div id="page-wrapper">
+
+                <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="page-title">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Profile</h1>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div id="profile_error" class="alert alert-danger col-lg-12">Error, profile not completed!!</div>
+                    </div>
+                </div>
+                <div id="error_message_placeholder" class="hidden">
+                    <div class="row">
+                        <div id="gender_error" class="alert alert-danger col-lg-12"></div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label>First Name</label>
+                                <input class="form-control" id="first_name" placeholder="first name" >
+                            </div>
+                            <div class="col-lg-4">
+                                <label>Last Name</label>
+                                <input class="form-control" id="last_name" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label>Email</label>
+                                <input class="form-control" id="email_address" placeholder="email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label>Password</label>
+                                <input type="password" id="password" class="form-control" placeholder="password">
+                            </div>
+                            <div class="col-lg-4">
+                                <label>Confirm Password</label>
+                                <input type="password" id="confirm_password" class="form-control" placeholder="confirm password">
+                            </div>
+                        </div>
+                        <div id="gender_div" class="row">
+                            <div class="col-lg-4">
+                                <label>Gender</label>
+                                <select id="gender" class="form-control" id="gender">
+                                    <option>Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                        </div>
+						<div class="row">
+                            <div class="col-lg-4">
+                                <label>Postcode</label>
+                                <input class="form-control" id="postcode" placeholder="postcode">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label>Profile Picture (? x ?)</label>
+                                <input type="file" id="profile_pic">
+                            </div>
+                        </div>
+                        <div class="page-header">
+    						<h3>Bartender Profile Information</h3>      
+  						</div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <label>Daily Rate</label>
+                                <div class="form-group input-group">
+                                	<span class="input-group-addon">£</span>
+                                	<input type="number" min="0" step="0.01" placeholder="0.00" id="hrate">
+                            	</div>
+                            </div>
+                            <div class="col-lg-3">
+                                <label>Nigtly Rate</label>
+                                <div class="form-group input-group">
+                                	<span class="input-group-addon">£</span>
+                                	<input type="number" min="0" step="0.01" placeholder="0.00" id="nrate">
+                            	</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label>Speciality</label>
+                                <input class="form-control" placeholder="your speciality..." id="special">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label>Ecperience</label>
+                                <textarea class="form-control" rows="3" id="exp"></textarea>
+                            </div>
+                            <div class="col-lg-6">
+                                <label>About Me</label>
+                                <textarea class="form-control" rows="3" id="about_me"></textarea>
+                            </div>
+                        </div>
+                        <div class="page-header">
+    						<h3>Organiser Profile Information</h3>      
+  						</div>
+  						<div class="row">
+  							<div class="col-lg-4">
+	  							<label>Checkboxes</label>
+	                            <div class="checkbox" id="event_types">
+	                                <label>
+	                                    <input type="checkbox" value="">Wedding
+	                                </label>
+	                            </div>
+	                            <div class="checkbox">
+	                                <label>
+	                                    <input type="checkbox" value="">Birthday Party
+	                                </label>
+	                            </div>
+	                            <div class="checkbox">
+	                                <label>
+	                                    <input type="checkbox" value="">Dinner Party
+	                                </label>
+	                            </div>
+	                            <div class="checkbox">
+	                                <label>
+	                                    <input type="checkbox" value="">other
+	                                </label>
+	                            </div>
+                                <input class="form-control" placeholder="other">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label>Professional Informationlabel>
+                                <textarea class="form-control" rows="3" id="prof_pos"></textarea>
+                            </div>
+                            <div class="col-lg-6">
+                                <label>Professional Description</label>
+                                <textarea class="form-control" rows="3" id="prof_desc">></textarea>
+                            </div>
+                        </div>
+                        </br>
+						<div class="row">
+							<div class="col-lg-4">
+                                <label>Card Number</label>
+                                <input class="form-control" placeholder="card number" id="card_number">
+                            </div>
+						</div>
+						<div class="row">
+                            <div class="col-lg-1">
+                                <label>Month</label>
+                                <input class="form-control" placeholder="MM" type="number" maxlength="2" id="card_month">
+                            </div>
+                            <div class="col-lg-2">
+                                <label>Year</label>
+                                <input class="form-control" placeholder="YYYY" type="number" maxlength="4" id="card_year">
+                            </div>
+							<div class="col-lg-1">
+                                <label>CSV</label>
+                                <input class="form-control" placeholder="CSV" type="number" maxlength="2" id="card_csv">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-lg" onclick="assertProfile()" >Save</button>
+                    </div>
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

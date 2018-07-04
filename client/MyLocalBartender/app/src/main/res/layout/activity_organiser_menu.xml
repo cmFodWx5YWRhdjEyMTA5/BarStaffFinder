@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cavaliers.mylocalbartender.menu.CustomDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cavaliers.mylocalbartender.menu.organiser_menu.OrganiserMenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_content">
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="@dimen/cavs_menu_width"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_sliding_menu"
+        android:background="#FFFFFF"
+        android:choiceMode="singleChoice"
+        android:layout_gravity="start">
+
+    </ListView>
+</com.cavaliers.mylocalbartender.menu.CustomDrawerLayout>

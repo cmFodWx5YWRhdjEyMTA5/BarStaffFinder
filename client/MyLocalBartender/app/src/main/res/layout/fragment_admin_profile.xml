@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Save Button Section-->
+    <LinearLayout
+        android:id="@+id/ll_admin_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/cavs_accent_material_dark" >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!--Save Button-->
+        <Button
+            android:id="@+id/btn_admin_save"
+            android:layout_width="@dimen/cavs_small_button_width"
+            android:layout_height="@dimen/cavs_small_button_height"
+            android:text="@string/cavs_btn_save"
+            android:textSize="@dimen/cavs_small_button_text"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!--Profile Header-->
+    <ScrollView
+        android:id="@+id/sv_admin_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cavs_primary_dark" >
+
+        <LinearLayout
+            android:id="@+id/ll_admin_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--Profile Picture-->
+            <include
+                layout="@layout/fragment_profile_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/cavs_10dp_spacing"
+                android:gravity="center"
+                android:weightSum="1" />
+
+            <!--Personal Information Section-->
+            <include
+                layout="@layout/fragment_personal_information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/cavs_10dp_spacing"
+                android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                android:gravity="center"
+                android:weightSum="1" />
+
+            <!--Bar Staff Information Section-->
+            <LinearLayout
+                android:id="@+id/ll_barstaff_section"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tv_barstaff_information_header"
+                    android:text="@string/cavs_barstaff_information_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                    android:layout_marginLeft="@dimen/cavs_second_indent"
+                    android:layout_marginStart="@dimen/cavs_second_indent"
+                    android:textSize="@dimen/cavs_user_information_header_text_size"
+                    android:textColor="@color/cavs_neutral" />
+
+                <include
+                    layout="@layout/fragment_bartender_work_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                    android:layout_marginLeft="@dimen/cavs_5dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_5dp_spacing"
+                    android:gravity="center"
+                    android:weightSum="1" />
+
+                <include
+                    layout="@layout/fragment_about_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/cavs_10dp_spacing"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:gravity="center"
+                    android:weightSum="1" />
+            </LinearLayout>
+
+            <!--Organiser Information Section-->
+            <LinearLayout
+                android:id="@+id/ll_organiser_section"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tv_organiser_information_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                    android:layout_marginLeft="@dimen/cavs_second_indent"
+                    android:layout_marginStart="@dimen/cavs_second_indent"
+                    android:text="@string/cavs_organiser_information_header"
+                    android:textSize="@dimen/cavs_user_information_header_text_size"
+                    android:textColor="@color/cavs_neutral" />
+
+                <include
+                    layout="@layout/fragment_event_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/cavs_10dp_spacing"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:padding="@dimen/cavs_5dp_spacing"
+                    android:gravity="center"
+                    android:weightSum="1" />
+
+                <include
+                    layout="@layout/fragment_professional_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/cavs_10dp_spacing"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:padding="@dimen/cavs_5dp_spacing"
+                    android:gravity="center"
+                    android:weightSum="1" />
+            </LinearLayout>
+
+            <!--Payment Details Section-->
+            <include
+                layout="@layout/fragment_payment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/cavs_10dp_spacing"
+                android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                android:padding="@dimen/cavs_5dp_spacing"
+                android:gravity="center"
+                android:weightSum="1" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

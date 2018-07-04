@@ -1,0 +1,25 @@
+{
+  "job_advert":[
+    {
+      "job_advert_details": "Details 1",
+      "home_number": "52",
+      "street_name": "Pondfield Lane",
+      "postcode": "CM13 2BX",
+      "start_date": "190317",
+      "start_time_hr": "01",
+      "start_time_min": "12",
+      "end_date": "200317",
+      "end_time_hr": "10",
+      "end_time_min": "20",
+      //AM PM Spinners
+      "spn_start":"AM",
+      "hours": "7",
+      "payrate": "10.00",
+      //Event type
+      "event_type": "Public Event",
+      // speciality
+      "spn_spec":"Barback",
+      "other_info": "this is a test"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_payment"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/payment_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cavs_accent_material_dark"
+        android:text="@string/cavs_payment_details"
+        android:textColor="@color/cavs_neutral"
+        android:textSize="@dimen/cavs_content_information_header_text_size"
+        android:textStyle="italic"
+        android:paddingLeft="@dimen/cavs_10dp_spacing"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/neutral_container"
+        android:padding="@dimen/cavs_10dp_spacing"
+        android:weightSum = "1">
+
+        <!--Card Number-->
+        <LinearLayout
+            android:id="@+id/ll_card_number"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                android:layout_marginLeft="@dimen/cavs_second_indent"
+                android:layout_marginStart="@dimen/cavs_second_indent"
+                android:text="@string/cavs_card_number"
+                android:textColor="@color/cavs_secondary_text_dark"
+                android:textSize="@dimen/cavs_general_text_size" />
+
+            <EditText
+                android:id="@+id/et_card_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cavs_5dp_spacing"
+                android:hint="@string/cavs_hint_card_number"
+                android:textColorHint="@color/cavs_hint_text_dark"
+                android:inputType="number"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_secondary_text_dark"
+                android:maxLength="16" />
+        </LinearLayout>
+
+        <!--Expiry Date-->
+        <LinearLayout
+            android:id="@+id/ll_expire"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_expire_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                android:layout_marginLeft="@dimen/cavs_second_indent"
+                android:layout_marginStart="@dimen/cavs_second_indent"
+                android:text="@string/cavs_expiry_date"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_secondary_text_dark" />
+
+            <EditText
+                android:id="@+id/et_expire_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cavs_5dp_spacing"
+                android:hint="@string/cavs_hint_mm"
+                android:textColorHint="@color/cavs_hint_text_dark"
+                android:inputType="date"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_secondary_text_dark"
+                android:maxLength="2"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cavs_5dp_spacing"
+                android:text="@string/cavs_date_divider"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_hint_divider_dark" />
+
+            <EditText
+                android:id="@+id/et_expire_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cavs_5dp_spacing"
+                android:hint="@string/cavs_hint_yyyy"
+                android:textColorHint="@color/cavs_hint_text_dark"
+                android:inputType="date"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_secondary_text_dark"
+                android:maxLength="4"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!--CVC Number-->
+        <LinearLayout
+            android:id="@+id/ll_cvc"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_cvc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                android:layout_marginLeft="@dimen/cavs_second_indent"
+                android:layout_marginStart="@dimen/cavs_second_indent"
+                android:text="@string/cavs_cvc"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_secondary_text_dark" />
+
+            <EditText
+                android:id="@+id/et_cvc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cavs_5dp_spacing"
+                android:hint="@string/cavs_hint_cvc"
+                android:textColorHint="@color/cavs_hint_text_dark"
+                android:inputType="number"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_secondary_text_dark"
+                android:maxLength="3"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

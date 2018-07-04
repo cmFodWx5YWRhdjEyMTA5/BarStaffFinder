@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--LEFT SIDE-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="10" >
+
+        <!--DAY-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/cavs_accent_material_dark"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_neutral"
+                android:text="@string/cavs_avail_day"/>
+        </LinearLayout>
+
+
+        <!--START AT-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/cavs_dark_primary"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/cavs_primary_text_dark"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:text="@string/cavs_avail_from"/>
+
+        </LinearLayout>
+
+
+        <!--FINISH AT-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/cavs_dark_primary_light"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/cavs_primary_text_dark"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:text="@string/cavs_avail_to"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="@dimen/cavs_2dp_spacing"
+        android:layout_height="match_parent"
+        android:background="@color/cavs_primary_text_dark"/>
+
+    <!--RIGHT SIDE-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_availability_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/neutral_container_dark"
+    android:layout_gravity="center" >
+
+    <!--Header-->
+    <TextView
+        android:id="@+id/tv_signin_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cavs_header_height"
+        android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+        android:background="@color/cavs_accent_material_dark"
+        android:text="@string/cavs_signin_header"
+        android:textSize="@dimen/cavs_large_text_size"
+        android:textColor="@color/cavs_neutral"
+        android:padding="@dimen/cavs_10dp_spacing"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/ll_sign_in"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/cavs_10dp_spacing"
+        android:weightSum="1" >
+
+        <!--E-Mail Address Input-->
+        <EditText
+            android:id="@+id/et_email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+            android:background="@drawable/textview_style"
+            android:hint="@string/cavs_hint_email"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/cavs_general_text_size"
+            android:textColor="?attr/actionModeSplitBackground"
+            android:textColorLink="@color/colorPrimary"
+            android:ems="10"
+            android:padding="@dimen/cavs_10dp_spacing" />
+
+        <!--Password Input-->
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+            android:background="@drawable/textview_style"
+            android:hint="@string/cavs_hint_password"
+            android:inputType="textPassword"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="@dimen/cavs_general_text_size"
+            android:textColor="?attr/actionModeSplitBackground"
+            android:textColorLink="@color/colorPrimary"
+            android:ems="10"
+            android:padding="@dimen/cavs_10dp_spacing" />
+
+        <!--Sign In Button-->
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cavs_large_button_height"
+            android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+            android:background="@drawable/button_style_red"
+            android:text="@string/cavs_btn_signin"
+            android:textSize="@dimen/cavs_large_text_size"
+            android:textColor="@color/cavs_neutral"
+            android:elevation="0dp" />
+
+        <!--Error Message Placeholder-->
+        <TextView
+            android:id="@+id/tv_signInMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/cavs_small_text_size"
+            android:textColor="@color/white"
+            android:ems="8"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</LinearLayout>

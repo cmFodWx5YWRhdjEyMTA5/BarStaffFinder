@@ -1,0 +1,28 @@
+{
+  "name": "mylocalbartender-demo",
+  "version": "1.0.0",
+  "description": "demo site",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha test/unitTest.js"
+  },
+  "author": "Cavaliers",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "chai": "^3.5.0",
+    "crypto": "^0.0.3",
+    "express": "^4.14.1",
+    "jsonwebtoken": "^7.2.1",
+    "mocka": "0.0.1",
+    "mysql": "^2.13.0",
+    "nodemailer": "^3.0.2",
+    "request": "^2.81.0",
+    "should": "^11.2.1",
+    "socket.io": "^1.7.3",
+    "stripe": "^4.15.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}

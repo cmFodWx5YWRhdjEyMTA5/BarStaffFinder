@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cavaliers.mylocalbartender.jobadvert.modify.JobModifyFragment"
+    android:id="@+id/fragment_modify_jobadvert_layout">
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rc_modify_jobs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color" />
+
+<android.support.design.widget.AppBarLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"/>
+
+
+</LinearLayout>

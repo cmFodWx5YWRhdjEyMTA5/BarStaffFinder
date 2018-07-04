@@ -1,0 +1,100 @@
+<resources>
+
+    <!--General-->
+
+    <dimen name="activity_horizontal_margin">40dp</dimen>
+    <dimen name="activity_vertical_margin">4dp</dimen>
+
+    <!--Spacing (Margin and Padding)-->
+    <dimen name="cavs_40dp_spacing">80dp</dimen>
+    <dimen name="cavs_20dp_spacing">40dp</dimen>
+    <dimen name="cavs_10dp_spacing">20dp</dimen>
+    <dimen name="cavs_5dp_spacing">10dp</dimen>
+    <dimen name="cavs_2dp_spacing">4dp</dimen>
+    <dimen name="cavs_1dp_spacing">2dp</dimen>
+
+    <!--Text-->
+    <dimen name="cavs_large_text_size">16sp</dimen>
+    <dimen name="cavs_general_text_size">14sp</dimen>
+    <dimen name="cavs_small_text_size">12sp</dimen>
+
+    <!--Indent-->
+    <dimen name="cavs_first_indent">14dp</dimen>
+    <dimen name="cavs_second_indent">28dp</dimen>
+    <dimen name="cavs_third_indent">56dp</dimen>
+
+    <!--Button-->
+    <dimen name="cavs_button_radius">6dp</dimen>
+    <dimen name="cavs_corner">10dp</dimen>
+
+    <dimen name="cavs_large_button_height">100dp</dimen>
+    <dimen name="cavs_large_button_text">18sp</dimen>
+
+    <dimen name="cavs_medium_button_width">200dp</dimen>
+    <dimen name="cavs_medium_button_text">11sp</dimen>
+
+    <dimen name="cavs_small_button_width">140dp</dimen>
+    <dimen name="cavs_small_button_height">70dp</dimen>
+    <dimen name="cavs_small_button_text">9sp</dimen>
+
+    <!--Specific-->
+
+    <!--activity_main-->
+    <dimen name="cavs_logo_placeholder">600dp</dimen>
+
+    <!--dialog_signin and dialog_signup-->
+    <dimen name="cavs_header_height">100dp</dimen>
+
+    <!--menu-->
+    <dimen name="cavs_menu_width">400dp</dimen>
+
+    <!--profiles (activity and fragments of admin, barstaff and organisers)-->
+    <dimen name="cavs_profile_picture">192dp</dimen>
+    <dimen name="cavs_profile_picture_border">4dp</dimen>
+
+    <dimen name="cavs_user_information_header_text_size">18sp</dimen>
+    <dimen name="cavs_content_information_header_text_size">16sp</dimen>
+    <dimen name="cavs_sub_content_information_header_text_size">15sp</dimen>
+
+    <dimen name="cavs_spinner_width">330dp</dimen>
+    <dimen name="cavs_spinner_height">60dp</dimen>
+
+    <dimen name="cavs_calendar_height">160dp</dimen>
+
+    <dimen name="cavs_general_checkbox_width">260dp</dimen>
+    <dimen name="cavs_other_checkbox_width">160dp</dimen>
+
+    <!--availability-->
+    <dimen name="cavs_calendar_day_height">300dp</dimen>
+    <dimen name="cavs_avail_calendar_height">400dp</dimen>
+    <dimen name="cavs_avail_day_height">240dp</dimen>
+    <dimen name="cavs_time_unit_text_size">28sp</dimen>
+
+    <!--advanced filter-->
+    <dimen name="cavs_filter_margin">30dp</dimen>
+    <dimen name="cavs_location_input_edittext_width">220dp</dimen>
+    <dimen name="cavs_max_distance_info_text_size">10sp</dimen>
+
+    <!--job advert-->
+    <dimen name="cavs_jobad_number_edittext_width">100dp</dimen>
+    <dimen name="cavs_jobad_street_edittext_width">300dp</dimen>
+    <dimen name="cavs_jobad_postcode_edittext_width">140dp</dimen>
+    <dimen name="cavs_jobad_time_edittext_width">80dp</dimen>
+
+    <!--card-->
+    <dimen name="cavs_card_height">100dp</dimen>
+    <dimen name="cavs_card_bottom">50dp</dimen>
+    <dimen name="cavs_card_icon">100dp</dimen>
+    <dimen name="cavs_card_icon_margin">32dp</dimen>
+    <dimen name="cavs_card_extra_text_size">10sp</dimen>
+    <dimen name="cavs_card_status_text_size">8sp</dimen>
+    <dimen name="cavs_card_minus_margin">-40dp</dimen>
+
+    <!--chat-->
+    <dimen name="cavs_toggle_spacing">100dp</dimen>
+    <dimen name="cavs_max_bubble_width">500dp</dimen>
+
+    <!--settings-->
+    <dimen name="cavs_setting_panel_spacing">140dp</dimen>
+
+</resources>

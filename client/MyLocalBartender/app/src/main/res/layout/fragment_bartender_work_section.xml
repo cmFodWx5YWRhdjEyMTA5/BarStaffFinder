@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_work_section"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/cavs_5dp_spacing"
+        android:weightSum="1" >
+
+        <!--Pay Rate-->
+        <TextView
+            android:id="@+id/tv_bartender_payrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cavs_accent_material_dark"
+            android:text="@string/cavs_work_info_payrate"
+            android:textColor="@color/cavs_neutral"
+            android:paddingLeft="@dimen/cavs_10dp_spacing"
+            android:textSize="@dimen/cavs_sub_content_information_header_text_size" />
+
+        <GridLayout
+            android:id="@+id/gl_payrate"
+            android:background="@drawable/neutral_container"
+            android:paddingBottom="@dimen/cavs_5dp_spacing"
+            android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Hourly Rate-->
+            <TextView
+                android:id="@+id/tv_bartender_hourly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                android:layout_marginLeft="@dimen/cavs_third_indent"
+                android:layout_marginStart="@dimen/cavs_third_indent"
+                android:text="@string/cavs_work_info_hourly"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_hourly_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                android:background="@drawable/textview_style"
+                android:hint="@string/cavs_work_info_hint_rate"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_secondary_text_light" />
+
+            <!--Nightly Rate-->
+            <TextView
+                android:id="@+id/tv_bartender_nightly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginLeft="@dimen/cavs_third_indent"
+                android:layout_marginStart="@dimen/cavs_third_indent"
+                android:text="@string/cavs_work_info_nightly"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/et_nightly_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/textview_style"
+                android:hint="@string/cavs_work_info_hint_rate"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="numberDecimal"
+                android:textColor="@color/cavs_secondary_text_light"
+                android:textSize="@dimen/cavs_general_text_size" />
+        </GridLayout>
+
+        <!--Bartender Experience-->
+        <TextView
+            android:id="@+id/tv_bartender_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cavs_accent_material_dark"
+            android:text="@string/cavs_experience"
+            android:textSize="@dimen/cavs_sub_content_information_header_text_size"
+            android:paddingLeft="@dimen/cavs_10dp_spacing"
+            android:textColor="@color/cavs_neutral" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/cavs_2dp_spacing"
+            android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+            android:background="@drawable/neutral_container">
+
+            <EditText
+                android:id="@+id/et_experience_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cavs_10dp_spacing"
+                android:hint="@string/cavs_hint_experience"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:maxLength="50"/>
+
+        </LinearLayout>
+
+        <!--Bartender Speciality-->
+        <TextView
+            android:id="@+id/tv_bartender_speciality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cavs_accent_material_dark"
+            android:text="@string/cavs_specialities"
+            android:textSize="@dimen/cavs_sub_content_information_header_text_size"
+            android:paddingLeft="@dimen/cavs_10dp_spacing"
+            android:textColor="@color/cavs_neutral" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/cavs_2dp_spacing"
+            android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+            android:background="@drawable/neutral_container">
+
+            <EditText
+                android:id="@+id/et_speciality_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cavs_10dp_spacing"
+                android:hint="@string/cavs_hint_specialities"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:maxLength="50" />
+
+        </LinearLayout>
+
+        <!--Proximity-->
+        <TextView
+            android:id="@+id/tv_howfar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cavs_accent_material_dark"
+            android:text="@string/cavs_proximity"
+            android:textSize="@dimen/cavs_sub_content_information_header_text_size"
+            android:paddingLeft="@dimen/cavs_10dp_spacing"
+            android:textColor="@color/cavs_neutral"/>
+
+        <LinearLayout
+            android:id="@+id/ll_proximity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/cavs_2dp_spacing"
+            android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+            android:background="@drawable/neutral_container">
+
+                <EditText
+                    android:id="@+id/et_proximity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cavs_10dp_spacing"
+                    android:hint="@string/cavs_hint_proximity"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/cavs_general_text_size"
+                    android:maxLength="5" />
+        </LinearLayout>
+
+        <!--Bartender Availability-->
+        <TextView
+            android:id="@+id/tv_availability_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cavs_accent_material_dark"
+            android:text="@string/cavs_availability"
+            android:textSize="@dimen/cavs_sub_content_information_header_text_size"
+            android:paddingLeft="@dimen/cavs_10dp_spacing"
+            android:textColor="@color/cavs_neutral"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/neutral_container">
+
+            <FrameLayout
+                android:id="@+id/profile_availability_frame"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cavs_calendar_height"
+                android:layout_margin="@dimen/cavs_10dp_spacing" >
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mbbackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/messagebox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@color/cavs_primary_dark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cavs_accent_material_dark"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cavs_accent_material_dark"
+                android:padding="@dimen/cavs_10dp_spacing"
+                android:text="@string/cavs_confirmation_header"
+                android:textColor="@color/cavs_primary_text_light"
+                android:textSize="@dimen/cavs_large_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/confirmation_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingBottom="@dimen/cavs_10dp_spacing"
+            android:paddingTop="@dimen/cavs_10dp_spacing"
+            android:layout_gravity="center"
+            android:text="@string/cavs_confirmation_message"
+            android:textColor="@color/cavs_neutral"
+            android:textSize="@dimen/cavs_general_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cavs_40dp_spacing"
+            android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+            android:layout_marginTop="@dimen/cavs_10dp_spacing"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/resendButton"
+                android:layout_width="@dimen/cavs_medium_button_width"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/cavs_10dp_spacing"
+                android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                android:layout_marginStart="@dimen/cavs_10dp_spacing"
+                android:layout_weight="1"
+                android:background="@drawable/button_style_neutral"
+                android:text="@string/cavs_btn_resend"
+                android:textColor="@color/cavs_primary_text_dark"
+                android:textSize="@dimen/cavs_small_text_size" />
+
+            <Button
+                android:id="@+id/signinButton"
+                android:layout_width="@dimen/cavs_medium_button_width"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/cavs_10dp_spacing"
+                android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                android:layout_marginStart="@dimen/cavs_10dp_spacing"
+                android:layout_weight="1"
+                android:background="@drawable/button_style_neutral"
+                android:text="@string/cavs_btn_signin"
+                android:textColor="@color/cavs_primary_text_dark"
+                android:textSize="@dimen/cavs_small_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

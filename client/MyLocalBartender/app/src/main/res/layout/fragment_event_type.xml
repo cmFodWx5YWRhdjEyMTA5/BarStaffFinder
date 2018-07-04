@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_event_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cavs_accent_material_dark"
+        android:text="@string/cavs_event_type_header"
+        android:textSize="@dimen/cavs_content_information_header_text_size"
+        android:textColor="@color/cavs_neutral"
+        android:paddingLeft="@dimen/cavs_10dp_spacing"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/ll_event_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/neutral_container"
+        android:orientation="vertical"
+        android:padding="@dimen/cavs_5dp_spacing"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:id="@+id/ll_wedding_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/chk_wedding"
+                android:layout_width="@dimen/cavs_general_checkbox_width"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/cavs_secondary_text_dark"
+                android:checked="false"
+                android:text="@string/cavs_cb_wedding"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_secondary_text_dark"
+                android:theme="@style/EditTextLine" />
+
+            <CheckBox
+                android:id="@+id/chk_birthday_party"
+                android:layout_width="@dimen/cavs_general_checkbox_width"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/cavs_secondary_text_dark"
+                android:checked="false"
+                android:text="@string/cavs_cb_birthday"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_secondary_text_dark"
+                android:theme="@style/EditTextLine" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dinner_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chk_dinner_party"
+                android:layout_width="@dimen/cavs_general_checkbox_width"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/cavs_secondary_text_dark"
+                android:text="@string/cavs_cb_dinnerparty"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textColor="@color/cavs_secondary_text_dark"
+                android:theme="@style/EditTextLine" />
+
+                <CheckBox
+                    android:id="@+id/chk_other"
+                    android:layout_width="@dimen/cavs_other_checkbox_width"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/cavs_secondary_text_dark"
+                    android:text="@string/cavs_cb_other"
+                    android:textSize="@dimen/cavs_general_text_size"
+                    android:textColor="@color/cavs_secondary_text_dark"
+                    android:theme="@style/EditTextLine" />
+
+                <EditText
+                    android:id="@+id/et_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cavs_hint_other"
+                    android:inputType="textPersonName"
+                    android:paddingTop="@dimen/cavs_2dp_spacing"
+                    android:textColor="@color/cavs_secondary_text_dark"
+                    android:textColorHint="@color/cavs_hint_text_dark"
+                    android:textSize="@dimen/cavs_general_text_size"
+                    android:ems="10"
+                    android:theme="@style/EditTextLine" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/cavs_primary_dark">
+
+        <include
+            layout="@layout/fragment_jobadvert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:weightSum="1" />
+
+        <!--Update Button-->
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cavs_large_button_height"
+            android:layout_margin="@dimen/cavs_10dp_spacing"
+            android:text="@string/cavs_btn_post"
+            android:background="@drawable/button_style_neutral"
+            android:textColor="@color/cavs_primary_text_dark"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

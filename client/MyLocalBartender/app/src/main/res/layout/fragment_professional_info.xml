@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_professional_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cavs_accent_material_dark"
+        android:text="@string/cavs_professional_information"
+        android:textSize="@dimen/cavs_content_information_header_text_size"
+        android:textColor="@color/cavs_primary_text_light"
+        android:textStyle="italic"
+        android:paddingLeft="@dimen/cavs_10dp_spacing"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/neutral_container"
+        android:id="@+id/ll_professional_information"
+        android:padding="@dimen/cavs_5dp_spacing"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/et_professional_pos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/cavs_10dp_spacing"
+            android:hint="@string/cavs_hint_professional_pos"
+            android:textColorHint="@color/cavs_hint_text_dark"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/cavs_general_text_size"
+            android:textColor="@color/cavs_secondary_text_dark"
+            android:theme="@style/EditTextLine"
+            android:ems="10"
+            android:maxLength="50" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

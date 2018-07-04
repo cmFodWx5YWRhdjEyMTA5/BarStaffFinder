@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cavs_card_height"
+    android:gravity="center_horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/cavs_primary_dark"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <!--BACKGROUND-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.2"
+                    android:background="@color/cavs_accent_material_dark"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@color/cavs_primary_dark"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.9"
+                    android:background="@color/cavs_primary_text_dark"
+                    android:orientation="horizontal"></LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--ICON-->
+                <ImageView
+                    android:id="@+id/ic_answer_job_thumbnail"
+                    android:layout_width="@dimen/cavs_card_icon"
+                    android:layout_height="@dimen/cavs_card_icon"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/cavs_card_icon_margin"
+                    app:srcCompat="@drawable/thumbnail" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--TOP-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                        android:layout_marginStart="@dimen/cavs_10dp_spacing"
+                        android:layout_marginTop="@dimen/cavs_2dp_spacing"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_answer_job_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/cavs_job_ad_title_placeholder"
+                            android:textColor="@color/cavs_neutral"
+                            android:textSize="@dimen/cavs_small_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_answer_job_payrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cavs_job_ad_payrate_placeholder"
+                            android:textColor="@color/cavs_secondary_text_light"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <!--BOTTOM-->
+                    <LinearLayout
+                        android:id="@+id/bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/cavs_5dp_spacing"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/bt_answer_job_read_more"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+
+                            android:background="@color/cavs_primary"
+                            android:text="@string/cavs_read_more"
+                            android:textColor="@color/cavs_secondary_text_light"
+                            android:textSize="@dimen/cavs_10dp_spacing" />
+
+                        <View
+                            android:layout_width="@dimen/cavs_1dp_spacing"
+                            android:layout_height="match_parent"
+                            android:background="#b3b3b3" />
+
+                        <Button
+                            android:id="@+id/bt_answer_job_withdraw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/cavs_primary"
+                            android:text="@string/cavs_withdraw"
+                            android:textColor="@color/cavs_decline_button"
+                            android:textSize="@dimen/cavs_10dp_spacing" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/cavs_20dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_20dp_spacing"
+                    android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cavs_status"
+                            android:textColor="@color/cavs_neutral"
+                            android:textSize="@dimen/cavs_card_status_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_answer_job_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/cavs_accent_material_dark"
+                            android:textSize="@dimen/cavs_card_status_text_size" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ic_answer_job_status"
+                        android:layout_width="@dimen/cavs_card_icon"
+                        android:layout_height="@dimen/cavs_card_icon"
+                        android:layout_marginLeft="@dimen/cavs_5dp_spacing"
+                        android:layout_marginStart="@dimen/cavs_5dp_spacing"
+                        android:gravity="center"
+                        android:src="@drawable/status_pending" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

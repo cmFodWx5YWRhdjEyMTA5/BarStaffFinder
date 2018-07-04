@@ -1,0 +1,303 @@
+<resources>
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string-array name="event_dropbox_text">
+        <item>Event Type</item>
+    </string-array>
+
+    <string-array name="distance_dropbox_text">
+        <item>Distance</item>
+    </string-array>
+
+    <string-array name="payment_dropbox_text">
+        <item>Pay Per Hour</item>
+    </string-array>
+
+    <string-array name="speciality">
+        <item>Speciality</item>
+        <item>Bartender</item>
+        <item>Mixologist</item>
+        <item>Barback</item>
+    </string-array>
+
+    <string-array name="ampm">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
+    <!--App Name-->
+    <string name="app_name">My Local Bartender</string>
+    <string name="delete_account">Delete Account</string>
+
+   <!--Create/Modify Job Advert form-->
+    <string name="cavs_hint_jobad_title">Job Advert Title</string>
+    <string name="cavs_desc_of_job">Description of Job</string>
+    <string name="cavs_hint_house_no">No.</string>
+    <string name="cavs_hint_street_name">Street Name</string>
+    <string name="cavs_hint_city_name">City Name</string>
+    <string name="cavs_date_time">Date and Time</string>
+    <string name="cavs_start_date_time">Start Date and Time</string>
+    <string name="cavs_end_date_time">End Date and Time</string>
+    <string name="cavs_duration_pay_rate">Duration and Pay Rate</string>
+    <string name="cavs_total_of">Total of</string>
+    <string name="cavs_hours_rate_of">hours at the rate of £</string>
+    <string name="cavs_event_type">Event Type</string>
+    <string name="cavs_hint_event_type">bar work at a public bar, private event etc</string>
+    <string name="cavs_job_need_to_know">Anything applicants <b>need to know</b> about the job? \n\n
+    e.g. \n - arriving a certain amount of time before the shift \n - break times and how long</string>
+    <string name="cavs_dash">-</string>
+    <string name="cavs_at">at</string>
+    <string name="cavs_btn_post">Post</string>
+    <string name="cavs_payrate_input">0.00</string>
+
+    <!--Shared Strings-->
+    <string name="cavs_btn_signin">Sign In</string>
+    <string name="cavs_btn_cancel">CANCEL</string>
+    <string name="cavs_btn_ok">OK</string>
+    <string name="cavs_availability">Availability</string>
+    <string name="cavs_event_type_header">Event Type</string>
+    <string name="cavs_btn_save">SAVE</string>
+    <string name="cavs_hint_dd">DD</string>
+    <string name="cavs_hint_mm">MM</string>
+    <string name="cavs_hint_yyyy">YYYY</string>
+    <string name="cavs_hint_dob">Date of Birth</string>
+    <string name="cavs_hint_postcode">Postcode</string>
+    <string name="cavs_job_ad_payrate_placeholder">Im a payrate</string>
+    <string name="cavs_btn_send">SEND</string>
+    <string name="cavs_btn_update">UPDATE</string>
+    <string name="cavs_btn_delete">DELETE</string>
+    <string name="cavs_no_desc">*The current has no description</string>
+    <string name="cavs_location">Location</string>
+    <string name="cavs_avail_day">DAY</string>
+
+    <!--Activity Profiles-->
+    <string name="cavs_btn_next">Next</string>
+
+    <!--Activity Admin Profile-->
+    <string name="cavs_barstaff_information_header">Barstaff Information</string>
+    <string name="cavs_organiser_information_header">Organiser Information</string>
+
+    <!--Activity Chat-->
+    <string name="cavs_chat_header">Chat</string>
+    <string name="cavs_chat_hourly">Hourly</string>
+    <string name="cavs_chat_sum">Sum</string>
+    <string name="cavs_btn_counter_offer">COUNTER OFFER</string>
+    <string name="cavs_btn_offer">OFFER</string>
+    <string name="cavs_hint_chat_message">Your message&#8230;</string>
+    <string name="cavs_chat_placeholder">Placeholder</string>
+
+    <!--Activity Confirmation-->
+    <string name="cavs_confirmation_header">Confirmation</string>
+    <string name="cavs_btn_resend">Resend</string>
+    <string name="cavs_confirmation_message">Thank you for your registration! \n A verification link has been sent to your email. \n Please click on the link to complete registration.</string>
+
+    <!--Activity Cover Letter-->
+    <string name="cavs_title">TITLE</string>
+    <string name="cavs_organiser">ORGANISER</string>
+    <string name="cavs_payrate">PAYRATE</string>
+    <string name="cavs_rate">RATE</string>
+    <string name="cavs_venue_details">VENUE DETAILS</string>
+    <string name="cavs_cover_letter_date">DATE:</string>
+    <string name="cavs_cover_letter_time">TIME:</string>
+    <string name="cavs_cover_letter_location">LOCATION:</string>
+    <string name="cavs_cover_letter_duration">DURATION:</string>
+    <string name="cavs_hint_cover_letter">Add a cover letter (optional)</string>
+    <string name="cavs_btn_submit">SUBMIT</string>
+    <string name="cavs_apply_disclaimer">By pressing apply, you consent to your application being transmitted to the Employer, and being processed and analysed in accordance with the Employer\'s privacy practices, Indeed\'s Cookie Policy, Privacy Policy and you agree to Indeed\'s Terms of Service.</string>
+
+    <!--Activity Description Job-->
+    <string name="cavs_event_kind">Event Kind</string>
+    <string name="cavs_staff_required">Staff Required</string>
+    <string name="cavs_date">Date</string>
+    <string name="cavs_placeholder">#</string>
+    <string name="cavs_desc_job_at">AT</string>
+    <string name="cavs_desc_job_for">FOR</string>
+    <string name="cavs_description">Description</string>
+
+    <!--Description Job & Description Profile-->
+    <string name="cavs_pay_rate">Payrate</string>
+    <string name="cavs_day">DAY:</string>
+    <string name="cavs_night">NIGHT:</string>
+
+    <!--Activity Description Profile-->
+    <string name="cavs_speciality">Speciality</string>
+    <string name="cavs_mon">MONDAY:</string>
+    <string name="cavs_tues">TUESDAY:</string>
+    <string name="cavs_wed">WEDNESDAY:</string>
+    <string name="cavs_thurs">THURSDAY:</string>
+    <string name="cavs_fri">FRIDAY:</string>
+    <string name="cavs_sat">SATURDAY:</string>
+    <string name="cavs_sun">SUNDAY:</string>
+
+    <!--Activity Main-->
+    <string name="cavs_btn_signup">Sign Up</string>
+
+    <!--Activity Settings Page-->
+    <string name="cavs_notifications">Allow Notifications</string>
+    <string name="cavs_vibrations">Allow Vibrations</string>
+    <string name="cavs_sounds">Allow Sounds</string>
+    <string name="cavs_switch_off">Off</string>
+    <string name="cavs_switch_on">On</string>
+    <string name="cavs_delete_account">DELETE ACCOUNT</string>
+
+    <!--Availability Row-->
+    <string name="cavs_avail_from">FROM:</string>
+    <string name="cavs_avail_to">TO:</string>
+
+    <!--Dialog Availability Calendar-->
+    <string name="cavs_start_at">START AT:</string>
+    <string name="cavs_finish_at">FINISH AT:</string>
+    <string name="cavs_colon">:</string>
+    <string name="cavs_caps_pm">PM</string>
+    <string name="cavs_caps_am">AM</string>
+    <string name="cavs_minutes">00</string>
+    <string name="cavs_avail_dialog_message">Please enter a valid time range</string>
+
+    <!--Dialog Date Picker-->
+    <string name="cavs_datepicker_day">DAY</string>
+    <string name="cavs_datepicker_month">MONTH</string>
+    <string name="cavs_datepicker_year">YEAR</string>
+
+    <!--Dialog Logout-->
+    <string name="cavs_logout_message">Are you sure you want to logout ?</string>
+    <string name="cavs_btn_yes">YES</string>
+    <string name="cavs_logout_header">Logout</string>
+
+    <!--Dialog SignIn-->
+    <string name="cavs_signin_header">Sign In to your MLB Account!</string>
+    <string name="cavs_hint_email">E-Mail Address</string>
+    <string name="cavs_hint_password">Password</string>
+
+    <!--Dialog Sign Up-->
+    <string name="cavs_signup_header">Sign Up and Start Working!</string>
+    <string name="cavs_hint_confirm_password">Confirm Password</string>
+    <string name="cavs_signup_as">I would like to sign up as</string>
+    <string name="cavs_radio_organiser">Organiser</string>
+    <string name="cavs_radio_barstaff">Bar Staff</string>
+
+    <!--About Me-->
+    <string name="cavs_aboutme_header">About Me</string>
+    <string name="cavs_hint_shortsummary">Tell us a bit about yourself&#8230;</string>
+
+    <!--Fragment Bartender work section-->
+    <string name="cavs_work_information_header">Work Information</string>
+    <string name="cavs_work_info_payrate">Pay Rate</string>
+    <string name="cavs_work_info_hourly">Hourly £</string>
+    <string name="cavs_work_info_nightly">Nightly £</string>
+    <string name="cavs_work_info_hint_rate">0.00</string>
+    <string name="cavs_experience">Experience</string>
+    <string name="cavs_hint_experience">Tell us what experience you have&#8230;</string>
+    <string name="cavs_specialities">Specialities</string>
+    <string name="cavs_hint_specialities">Tell us what specialities you have&#8230;</string>
+    <string name="cavs_proximity">How far are you willing to travel ?</string>
+    <string name="cavs_hint_proximity">E.g. (10 miles)</string>
+
+    <!--Fragment Event Type-->
+    <string name="cavs_cb_wedding">Wedding</string>
+    <string name="cavs_cb_birthday">Birthday</string>
+    <string name="cavs_cb_dinnerparty">Dinner Party</string>
+    <string name="cavs_cb_other">Other</string>
+    <string name="cavs_hint_other">Please specify</string>
+
+    <!--Fragment Filter Content-->
+    <string name="cavs_filter_header">Find the job that best suits you by refining your search:</string>
+    <string name="cavs_event_header">By Event Type</string>
+    <string name="cavs_by_location">By Location</string>
+    <string name="cavs_max_distance">Max distance of</string>
+    <string name="cavs_from">from</string>
+    <string name="cavs_date_header">By Date</string>
+    <string name="cavs_job_starting">Jobs starting from</string>
+    <string name="cavs_payrate_header">By Pay Rate</string>
+    <string name="cavs_filter_placeholder">filter placeholder</string>
+    <string name="cavs_btn_apply">Apply</string>
+    <string name="cavs_btn_reset">Reset</string>
+    <string name="cavs_filter">FILTER</string>
+    <string name="cavs_forward_slash">/</string>
+
+    <!--Fragment Organiser Information-->
+    <string name="cavs_organiser_info">Organiser Information</string>
+    <string name="cavs_professional_pos">Professional Position</string>
+    <string name="cavs_hint_position">Position</string>
+
+    <!--Fragment Payment-->
+    <string name="cavs_payment_details">Payment Details</string>
+    <string name="cavs_card_number">Card Number:</string>
+    <string name="cavs_hint_card_number">XXXXXXXXXXXXXXXX</string>
+    <string name="cavs_expiry_date">Expiry Date</string>
+    <string name="cavs_cvc">CVC</string>
+    <string name="cavs_hint_cvc">XXX</string>
+    <string name="cavs_date_divider">/</string>
+
+    <!--Fragment Personal Information-->
+    <string name="cavs_personal_information">Personal Information</string>
+    <string name="cavs_hint_fname">First Name</string>
+    <string name="cavs_hint_lname">Last Name</string>
+
+    <!--Fragment Professional Infomation-->
+    <string name="cavs_professional_information">Professional Information</string>
+    <string name="cavs_hint_professional_pos">Professional Position (Optional)</string>
+
+    <!--Item Job Advert-->
+    <string name="cavs_job_ad_title_placeholder">Im a title</string>
+    <string name="cavs_job_ad_holder_placeholder">Im an event holder</string>
+    <string name="cavs_job_ad_posted_on_placeholder">Posted on</string>
+    <string name="cavs_job_ad_posted_day_placeholder">Posted: DAY</string>
+    <string name="cavs_job_ad_no_event_placeholder">N/A</string>
+    <string name="cavs_job_ad_am">TIME: </string>
+    <string name="cavs_item_job_ad_date">DATE:</string>
+    <string name="cavs_job_ad_required_hours">REQUIRED HOURS: </string>
+    <string name="cavs_job_ad_staff_required">STAFF REQUIRED:</string>
+    <string name="cavs_job_ad_event_kind">EVENT KIND:</string>
+
+    <!--Item Advert Profile-->
+    <string name="cavs_ad_profile_name_placeholder">Im a name</string>
+    <string name="cavs_ad_profile_spec_placeholder">Im a speciality</string>
+    <string name="cavs_ad_profile_availability">Availability</string>
+    <string name="cavs_ad_profile_mon">Mon</string>
+    <string name="cavs_ad_profile_tue">Tue</string>
+    <string name="cavs_ad_profile_wed">Wed</string>
+    <string name="cavs_ad_profile_thu">Thu</string>
+    <string name="cavs_ad_profile_fri">Fri</string>
+    <string name="cavs_ad_profile_sat">Sat</string>
+    <string name="cavs_ad_profile_sun">Sun</string>
+    <string name="cavs_btn_invite">INVITE</string>
+
+    <!--Item Answer Job/ Item Answer Profile-->
+    <string name="cavs_read_more">READ MORE&#8230;</string>
+    <string name="cavs_withdraw">WITHDRAW</string>
+    <string name="cavs_status">STATUS:</string>
+    <string name="cavs_username">im a username</string>
+
+    <!--Item Contact-->
+    <string name="cavs_item_contact_chat">CHAT</string>
+    <string name="cavs_item_contact_reject">REJECT</string>
+
+    <!--Item Job Advert Modify-->
+    <string name="cavs_job_ad_title">Job Advert Title</string>
+    <string name="cavs_job_ad_date_placeholder">Job Advert Date</string>
+    <string name="cavs_job_ad_type_placeholder">Job Advert Type</string>
+    <string name="cavs_job_ad_date">Date:</string>
+    <string name="cavs_job_ad_type">Type:</string>
+
+    <!--Item Job Advert Private-->
+    <string name="cavs_jobad_private_title">Job Advert Title</string>
+
+    <!--Item Request Job-->
+    <string name="cavs_btn_accept">ACCEPT</string>
+    <string name="cavs_btn_decline">DECLINE</string>
+
+    <string name="drawer_opened">Opening</string>
+    <string name="drawer_closed">Closing</string>
+    <string name="apply_button">Apply</string>
+    <string name="message">Message</string>
+
+    <!--Item Request Profile - used what aleady existed-->
+
+
+</resources>
+

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbaro"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways|snap">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                app:showAsAction="ifRoom|collapseActionView"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <!--Event Types Section-->
+        <LinearLayout
+            android:id="@+id/ll_event_type_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!--Header-->
+            <TextView
+                android:id="@+id/tv_event_type_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:text="@string/cavs_event_header"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <!--Checkboxes-->
+            <GridLayout
+                android:id="@+id/gl_event_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Birthday-->
+                <CheckBox
+                    android:id="@+id/chk_birthday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_row="0"
+                    android:text="@string/cavs_cb_birthday"
+                    android:textColor="@color/black"
+                    android:theme="@style/EditTextLine" />
+
+                <!--Wedding-->
+                <CheckBox
+                    android:id="@+id/chk_wedding_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_row="0"
+                    android:text="@string/cavs_cb_wedding"
+                    android:textColor="@color/black"
+                    android:theme="@style/EditTextLine" />
+
+                <!--Dinner Party-->
+                <CheckBox
+                    android:id="@+id/chk_dinner_party_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginBottom="7dp"
+                    android:layout_row="0"
+                    android:text="@string/cavs_cb_dinnerparty"
+                    android:textColor="@color/black"
+                    android:theme="@style/EditTextLine" />
+
+                <!--Other-->
+                <CheckBox
+                    android:id="@+id/chk_other_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:text="@string/cavs_cb_other"
+                    android:textColor="@color/black"
+                    android:theme="@style/EditTextLine" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        <!--Location Section-->
+        <LinearLayout
+            android:id="@+id/ll_location_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+            <!--Header-->
+            <TextView
+                android:id="@+id/tv_location_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:text="@string/cavs_location"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Location Input-->
+                <EditText
+                    android:id="@+id/et_location_input"
+                    android:layout_width="127dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <!--Max Distance Info-->
+                <TextView
+                    android:id="@+id/tv_max_distance_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:padding="5dp"
+                    android:text="@string/cavs_max_distance"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <!--Distance Input-->
+                <EditText
+                    android:id="@+id/et_distance_input"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <!--Max Distance Info 2-->
+                <TextView
+                    android:id="@+id/tv_max_distance_info_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="@string/cavs_max_distance"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Date Section-->
+        <LinearLayout
+            android:id="@+id/ll_date_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!--Header-->
+            <TextView
+                android:id="@+id/tv_date_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:text="@string/cavs_date"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--From-->
+                <LinearLayout
+                    android:id="@+id/ll_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Label-->
+                    <TextView
+                        android:id="@+id/tv_from_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.09"
+                        android:text="@string/cavs_from" />
+
+                    <!--Start Date-->
+                    <GridLayout
+                        android:id="@+id/gl_start_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_row="0">
+
+                        <EditText
+                            android:id="@+id/et_event_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="2"
+                            android:gravity="center_horizontal"
+                            android:hint="DD"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <!--Date Divider-->
+                        <TextView
+                            android:id="@+id/tv_divider1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/"
+                            android:textColor="@color/black" />
+
+                        <!--Start Month-->
+                        <EditText
+                            android:id="@+id/et_event_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="2"
+                            android:gravity="center_horizontal"
+                            android:hint="MM"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <!--Date Divider-->
+                        <TextView
+                            android:id="@+id/tv_divider2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/"
+                            android:textColor="@color/black" />
+
+                        <!--Start Year-->
+                        <EditText
+                            android:id="@+id/et_event_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:gravity="center_horizontal"
+                            android:hint="YYYY"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textColorHint="@android:color/darker_gray" />
+                    </GridLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Pay Rate Section-->
+        <LinearLayout
+            android:id="@+id/ll_payrate_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!--Header-->
+            <TextView
+                android:id="@+id/tv_payrate_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:text="@string/cavs_pay_rate"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <SeekBar
+                android:id="@+id/sb_payrate_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:max="5000" />
+
+            <TextView
+                android:id="@+id/tv_min_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="test test test"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <!--Apply Button Section-->
+        <LinearLayout
+            android:id="@+id/ll_button_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <!--Apply Button-->
+            <Button
+                android:id="@+id/btn_apply_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/apply_button" />
+
+            <!--Reset Button-->
+            <Button
+                android:id="@+id/btn_reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="reset" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/filter_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/cavs_filter_header"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+</LinearLayout>

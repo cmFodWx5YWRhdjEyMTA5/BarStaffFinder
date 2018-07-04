@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/hire_item1" android:title="Hire for a new job"/>
+    <item android:id="@+id/hire_item2" android:title="Hire for a listed job"/>
+    <item android:id="@+id/hire_item3" android:title="CANCEL"/>
+
+</menu>

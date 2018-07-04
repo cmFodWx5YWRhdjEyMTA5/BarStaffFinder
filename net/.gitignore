@@ -1,0 +1,10 @@
+.idea
+node_modules/
+*~
+*.class
+*.swp
+.DS_Store
+mlb_ssl/
+ssl/*.crt
+ssl/*.csr
+ssl/*.key

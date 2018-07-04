@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/cavs_10dp_spacing"
+    android:background="@color/cavs_primary">
+
+    <Button
+        android:id="@+id/delete_button"
+        android:text="@string/cavs_delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/cavs_10dp_spacing"
+        android:paddingRight="@dimen/cavs_10dp_spacing"
+        android:background="@drawable/button_style_red"
+        android:textColor="@color/cavs_neutral"
+        android:layout_marginBottom="@dimen/cavs_40dp_spacing"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </Button>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/cavs_20dp_spacing"
+        android:columnCount="2"
+        android:background="@drawable/neutral_container"
+        android:id="@+id/gridLayout"
+        android:layout_above="@+id/delete_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/cavs_setting_panel_spacing">
+
+            <!--Notification-->
+            <TextView
+                android:id = "@+id/notifications"
+                android:textSize ="@dimen/cavs_large_text_size"
+                android:text = "@string/cavs_notifications"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <Switch
+                android:id = "@+id/notifications_switch"
+                android:textSize ="@dimen/cavs_large_text_size"
+                android:text = "@string/cavs_switch_off"
+                android:textOff =""
+                android:textOn=""
+                android:layout_width="wrap_content"
+                android:layout_height = "wrap_content"
+                android:thumb = "@drawable/thumb_switch_selector"
+                android:track = "@drawable/track_switch_selector"
+                android:layout_gravity="fill"
+                android:gravity = "center" />
+
+            <!--Vibration-->
+            <TextView
+                android:id = "@+id/vibration_label"
+                android:textSize ="@dimen/cavs_large_text_size"
+                android:text = "@string/cavs_vibrations"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/cavs_20dp_spacing"
+                android:layout_marginBottom="@dimen/cavs_20dp_spacing" />
+
+            <Switch
+                android:id = "@+id/vibration_switch"
+                android:textSize ="@dimen/cavs_large_text_size"
+                android:text = "@string/cavs_switch_off"
+                android:textOff=""
+                android:textOn=""
+                android:thumb = "@drawable/thumb_switch_selector"
+                android:track = "@drawable/track_switch_selector"
+                android:layout_width="wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity="fill"
+                android:gravity = "center"
+                android:layout_marginTop="@dimen/cavs_20dp_spacing"
+                android:layout_marginBottom="@dimen/cavs_20dp_spacing" />
+
+            <!--Sound-->
+            <TextView
+                android:id = "@+id/sound_label"
+                android:text = "@string/cavs_sounds"
+                android:textSize="@dimen/cavs_large_text_size"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <Switch
+                android:id = "@+id/sound_switch"
+                android:textSize ="@dimen/cavs_large_text_size"
+                android:text = "@string/cavs_switch_off"
+                android:textOff=""
+                android:textOn=""
+                android:thumb = "@drawable/thumb_switch_selector"
+                android:track = "@drawable/track_switch_selector"
+                android:layout_width="wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity="fill"
+                android:gravity = "center" />
+        </GridLayout>
+
+</RelativeLayout>
+

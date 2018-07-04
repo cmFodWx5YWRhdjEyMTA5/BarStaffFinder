@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cavs_deep_grey" >
+
+    <!--Background Image-->
+    <ImageView
+    android:id="@+id/iv_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/mlb_background"
+    android:scaleType="centerCrop" />
+
+    <!--TO BE REMOVED-->
+    <!--END OF TO BE REMOVED-->
+
+    <!--My Local Bartender Logo-->
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/cavs_logo_placeholder"
+        android:layout_height="@dimen/cavs_logo_placeholder"
+        android:maxHeight="@dimen/cavs_logo_placeholder"
+        android:maxWidth="@dimen/cavs_logo_placeholder"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mlb_logo"
+        android:scaleType="fitCenter" />
+
+    <!--Button Pane-->
+    <LinearLayout
+        android:id="@+id/button_pane"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/neutral_container_30pc"
+        android:padding="@dimen/cavs_10dp_spacing" >
+
+        <!--Sign In Button-->
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cavs_large_button_height"
+            android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+            android:background="@drawable/button_style_red"
+            android:text="@string/cavs_btn_signin"
+            android:textSize="@dimen/cavs_large_button_text"
+            android:textColor="@color/cavs_neutral" />
+
+        <!--Sign Up Button-->
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cavs_large_button_height"
+            android:text="@string/cavs_btn_signup"
+            android:textSize="@dimen/cavs_large_button_text"
+            android:background="@drawable/button_style_neutral"
+            android:textColor="@color/cavs_primary_text_dark" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_advert_profile_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:cardBackgroundColor="@color/cavs_primary_dark"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <!--Top Content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Bar Staff Name-->
+            <TextView
+                android:id="@+id/tv_advert_profile_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cavs_accent_material_dark"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/cavs_first_indent"
+                android:paddingLeft="@dimen/cavs_first_indent"
+                android:paddingStart="@dimen/cavs_first_indent"
+                android:text="@string/cavs_ad_profile_name_placeholder"
+                android:textColor="@color/cavs_neutral"
+                android:textSize="@dimen/cavs_general_text_size"
+                android:textStyle="bold" />
+
+            <!--Profile Advert Information-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cavs_card_icon_margin"
+                android:layout_marginBottom="@dimen/cavs_20dp_spacing"
+                android:orientation="horizontal">
+
+                <!--Icon-->
+                <ImageView
+                    android:id="@+id/ic_advert_profile_thumbnail"
+                    android:layout_width="@dimen/cavs_card_icon"
+                    android:layout_height="@dimen/cavs_card_icon"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/thumbnail" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/cavs_5dp_spacing"
+                    android:paddingLeft="@dimen/cavs_5dp_spacing"
+                    android:paddingRight="@dimen/cavs_5dp_spacing"
+                    android:paddingStart="@dimen/cavs_5dp_spacing">
+
+                    <!--Bar Staff Speciality-->
+                    <TextView
+                        android:id="@+id/tv_advert_profile_speciality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:paddingEnd="@dimen/cavs_first_indent"
+                        android:paddingLeft="@dimen/cavs_first_indent"
+                        android:paddingStart="@dimen/cavs_first_indent"
+                        android:text="@string/cavs_ad_profile_spec_placeholder"
+                        android:textColor="@color/cavs_primary_text_light"
+                        android:textSize="@dimen/cavs_small_text_size" />
+
+                    <!--Bar Staff Payrate-->
+                    <TextView
+                        android:id="@+id/tv_advert_profile_payrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/cavs_first_indent"
+                        android:paddingLeft="@dimen/cavs_first_indent"
+                        android:paddingStart="@dimen/cavs_first_indent"
+                        android:text="@string/cavs_job_ad_payrate_placeholder"
+                        android:textColor="@color/cavs_secondary_text_light"
+                        android:textSize="@dimen/cavs_small_text_size"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Content Details-->
+            <!--android:visibility="gone"-->
+            <LinearLayout
+                android:id="@+id/ll_advert_profile_description_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cavs_1dp_spacing"
+                android:background="@color/cavs_card_light"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/cavs_5dp_spacing"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/cavs_2dp_spacing"
+                    android:paddingTop="@dimen/cavs_2dp_spacing">
+
+                    <!--Availability Header-->
+                    <TextView
+                        android:id="@+id/tv_avail_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/cavs_5dp_spacing"
+                        android:layout_marginLeft="@dimen/cavs_second_indent"
+                        android:layout_marginStart="@dimen/cavs_second_indent"
+                        android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                        android:text="@string/cavs_ad_profile_availability"
+                        android:textColor="#d9d9d9"
+                        android:textSize="@dimen/cavs_small_text_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cavs_1dp_spacing"
+                    android:layout_marginBottom="@dimen/cavs_2dp_spacing"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:layout_marginTop="@dimen/cavs_2dp_spacing"
+                    android:background="@color/cavs_card_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+                    android:background="#595959"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/cavs_5dp_spacing"
+                    android:paddingTop="@dimen/cavs_5dp_spacing">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                        android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--Monday-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/cavs_2dp_spacing"
+                                android:layout_marginRight="@dimen/cavs_2dp_spacing"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_ad_profile_mon"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_small_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_monday_avail_from"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_monday_avail_to"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/cavs_1dp_spacing"
+                                android:layout_height="match_parent"
+                                android:background="#454545" />
+
+                            <!--Tuesday-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/cavs_2dp_spacing"
+                                android:layout_marginRight="@dimen/cavs_2dp_spacing"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_ad_profile_tue"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_small_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_tuesday_avail_from"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_tuesday_avail_to"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/cavs_1dp_spacing"
+                                android:layout_height="match_parent"
+                                android:background="#454545" />
+
+                            <!--Wednesday-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/cavs_2dp_spacing"
+                                android:layout_marginRight="@dimen/cavs_2dp_spacing"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_ad_profile_wed"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_small_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_wednesday_avail_from"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_wednesday_avail_to"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/cavs_1dp_spacing"
+                                android:layout_height="match_parent"
+                                android:background="#454545" />
+
+
+                            <!--Thursday-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/cavs_2dp_spacing"
+                                android:layout_marginRight="@dimen/cavs_2dp_spacing"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_ad_profile_thu"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_small_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_thursday_avail_from"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_thursday_avail_to"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/cavs_1dp_spacing"
+                                android:layout_height="match_parent"
+                                android:background="#454545" />
+
+                            <!--Friday-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/cavs_2dp_spacing"
+                                android:layout_marginRight="@dimen/cavs_2dp_spacing"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_ad_profile_fri"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_small_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_friday_avail_from"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size"/>
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_friday_avail_to"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/cavs_1dp_spacing"
+                                android:layout_height="match_parent"
+                                android:background="#454545" />
+
+                            <!--Saturday-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/cavs_2dp_spacing"
+                                android:layout_marginRight="@dimen/cavs_2dp_spacing"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_ad_profile_sat"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_small_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_saturday_avail_from"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_saturday_avail_to"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/cavs_1dp_spacing"
+                                android:layout_height="match_parent"
+                                android:background="#454545" />
+
+                            <!--Sunday-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="@dimen/cavs_2dp_spacing"
+                                android:layout_marginRight="@dimen/cavs_2dp_spacing"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_ad_profile_sun"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_small_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_sunday_avail_from"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_advert_profile_sunday_avail_to"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/cavs_placeholder"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/cavs_secondary_text_light"
+                                    android:textSize="@dimen/cavs_card_status_text_size" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--Further Description-->
+                <TextView
+                    android:id="@+id/tv_advert_profile_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:text="@string/cavs_no_desc"
+                    android:textColor="@color/cavs_neutral_dark"
+                    android:textSize="@dimen/cavs_small_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:layout_marginTop="@dimen/cavs_card_minus_margin"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!--Invite Button-->
+                    <Button
+                        android:id="@+id/bt_advert_profile_invite"
+                        android:layout_width="@dimen/cavs_medium_button_width"
+                        android:layout_height="wrap_content"
+                        android:background="@color/cavs_card_button"
+                        android:text="@string/cavs_btn_invite"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/cavs_medium_button_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Bottom Content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/container_rounded"
+            android:orientation="horizontal">
+
+            <!--General Location-->
+            <TextView
+                android:id="@+id/tv_advert_profile_location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:textColor="@color/cavs_neutral_dark"
+                android:textSize="@dimen/cavs_card_extra_text_size"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

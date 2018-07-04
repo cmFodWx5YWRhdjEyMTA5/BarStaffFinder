@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_availability_root_layout"
+    android:layout_width="320dp"
+    android:layout_height="299dp"
+    android:orientation="vertical">
+
+
+    <!--TOP-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <!--TITLE-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/cavs_accent_material_dark"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/cavs_datepicker_day"
+                android:textColor="@color/cavs_secondary_text_light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/cavs_datepicker_month"
+                android:textColor="@color/cavs_secondary_text_light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/cavs_datepicker_year"
+                android:textColor="@color/cavs_secondary_text_light" />
+
+
+        </LinearLayout>
+
+
+        <!--PICKER-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <NumberPicker
+                android:id="@+id/np_dialog_cavs_datepicker_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:descendantFocusability="blocksDescendants" />
+
+            <NumberPicker
+                android:id="@+id/np_dialog_cavs_datepicker_month"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:descendantFocusability="blocksDescendants" />
+
+            <NumberPicker
+                android:id="@+id/np_dialog_cavs_datepicker_year"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:descendantFocusability="blocksDescendants" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--BOTTOM-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/cavs_accent_material_dark"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/cavs_5dp_spacing"
+            android:layout_marginTop="@dimen/cavs_5dp_spacing" >
+
+            <Button
+                android:id="@+id/bt_dialog_cavs_datepicker_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cavs_accent_material_dark"
+                android:text="@string/cavs_btn_ok"
+                android:textColor="@color/cavs_secondary_text_light"/>
+
+            <View
+                android:layout_width="@dimen/cavs_1dp_spacing"
+                android:layout_height="match_parent"
+                android:background="@color/cavs_dark_primary_light" />
+
+            <Button
+                android:id="@+id/bt_dialog_cavs_datepicker_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cavs_accent_material_dark"
+                android:text="@string/cavs_btn_cancel"
+                android:textColor="@color/cavs_secondary_text_light"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

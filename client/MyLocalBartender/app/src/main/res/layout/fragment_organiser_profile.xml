@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_organiser_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/cavs_accent_material_dark"
+        android:weightSum="1" >
+
+        <!--Save Button-->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="@dimen/cavs_small_button_width"
+            android:layout_height="@dimen/cavs_small_button_height"
+            android:text="@string/cavs_btn_save"
+            android:textSize="@dimen/cavs_small_button_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cavs_primary_dark" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="1" >
+
+                <!--Profile Picture-->
+                <include
+                    layout="@layout/fragment_profile_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/cavs_10dp_spacing"
+                    android:gravity="center"
+                    android:weightSum="1" />
+
+                <!--Personal Information-->
+                <include
+                    layout="@layout/fragment_personal_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/cavs_10dp_spacing"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:gravity="center"
+                    android:weightSum="1" />
+
+                <!--Event Type-->
+                <include
+                    layout="@layout/fragment_event_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/cavs_10dp_spacing"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:gravity="center"
+                    android:weightSum="1" />
+
+                <!--Professional Information-->
+                <include
+                    layout="@layout/fragment_professional_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/cavs_10dp_spacing"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:gravity="center"
+                    android:weightSum="1" />
+
+                <!--Payment Details-->
+                <include
+                    layout="@layout/fragment_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/cavs_10dp_spacing"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:gravity="center"
+                    android:weightSum="1" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

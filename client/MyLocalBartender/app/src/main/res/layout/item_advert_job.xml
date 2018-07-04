@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    tools:context=".home.TestActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_advert_job_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:cardBackgroundColor="@color/cavs_primary_dark"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Job Title-->
+            <TextView
+                android:id="@+id/tv_advert_job_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cavs_accent_material_dark"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/cavs_first_indent"
+                android:paddingRight="@dimen/cavs_first_indent"
+                android:paddingStart="@dimen/cavs_first_indent"
+                android:text="@string/cavs_job_ad_title_placeholder"
+                android:textColor="@color/cavs_neutral"
+                android:textSize="@dimen/cavs_large_text_size"
+                android:textStyle="bold" />
+
+            <!--Top Content-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cavs_20dp_spacing"
+                android:background="@color/cavs_primary_dark"
+                android:orientation="horizontal"
+                android:padding="@dimen/cavs_10dp_spacing">
+
+                <!--Icon-->
+                <ImageView
+                    android:id="@+id/ic_advert_job_thumbnail"
+                    android:layout_width="@dimen/cavs_card_icon"
+                    android:layout_height="@dimen/cavs_card_icon"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/thumbnail" />
+
+                <!--Basic Details-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/cavs_5dp_spacing"
+                    android:paddingLeft="@dimen/cavs_5dp_spacing"
+                    android:paddingStart="@dimen/cavs_5dp_spacing">
+
+                    <!--Organiser Username-->
+                    <TextView
+                        android:id="@+id/tv_advert_job_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/cavs_first_indent"
+                        android:paddingRight="@dimen/cavs_first_indent"
+                        android:paddingStart="@dimen/cavs_first_indent"
+                        android:text="@string/cavs_job_ad_holder_placeholder"
+                        android:textColor="@color/cavs_primary_text_light"
+                        android:textSize="@dimen/cavs_general_text_size" />
+
+                    <!--Payrate of Job-->
+                    <TextView
+                        android:id="@+id/tv_advert_job_payrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/cavs_first_indent"
+                        android:paddingRight="@dimen/cavs_first_indent"
+                        android:paddingStart="@dimen/cavs_first_indent"
+                        android:text="@string/cavs_job_ad_payrate_placeholder"
+                        android:textColor="@color/cavs_secondary_text_light"
+                        android:textSize="@dimen/cavs_small_text_size"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Content Details-->
+            <!--android:visibility="gone"-->
+            <LinearLayout
+                android:id="@+id/ll_advert_job_description_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!--Essential Details-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cavs_card_light"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/cavs_5dp_spacing"
+                    android:paddingTop="@dimen/cavs_5dp_spacing">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                        android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--Date of Job-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cavs_item_job_ad_date"
+                                android:textColor="@color/cavs_secondary_text_light"
+                                android:textSize="@dimen/cavs_small_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_advert_job_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="@string/cavs_placeholder"
+                                android:textColor="@color/cavs_secondary_text_light"
+                                android:textSize="@dimen/cavs_small_text_size" />
+
+                            <!--Time of Job-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="@string/cavs_job_ad_am"
+                                android:textColor="@color/cavs_secondary_text_light"
+                                android:textSize="@dimen/cavs_small_text_size" />
+
+                            <TextView
+                                android:id="@+id/tv_advert_job_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="@string/cavs_placeholder"
+                                android:textColor="@color/cavs_secondary_text_light" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/cavs_5dp_spacing"
+                            android:orientation="horizontal">
+                            <!--Duration of Job-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="@string/cavs_job_ad_required_hours"
+                                android:textColor="@color/cavs_secondary_text_light"
+                                android:textSize="@dimen/cavs_small_text_size" />
+
+                            <TextView
+                                android:id="@+id/tv_advert_job_duration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="@string/cavs_placeholder"
+                                android:textColor="@color/cavs_secondary_text_light"
+                                android:textSize="@dimen/cavs_small_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--Further Details-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/cavs_10dp_spacing"
+                    android:background="@color/cavs_card_dark"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/cavs_5dp_spacing"
+                    android:paddingTop="@dimen/cavs_5dp_spacing">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                        android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                        android:orientation="horizontal">
+
+                        <!--Type of Staff Required for Job e.g. Bar Back, Mixologist etc-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cavs_job_ad_staff_required"
+                            android:textColor="@color/cavs_secondary_text_light"
+                            android:textSize="@dimen/cavs_small_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_advert_job_speciality"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/cavs_secondary_text_light" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/cavs_1dp_spacing"
+                        android:layout_marginBottom="@dimen/cavs_2dp_spacing"
+                        android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                        android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                        android:layout_marginTop="@dimen/cavs_2dp_spacing"
+                        android:background="#414141" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                        android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                        android:orientation="horizontal">
+
+                        <!--Event Type of Job-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/cavs_10dp_spacing"
+                            android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                            android:text="@string/cavs_job_ad_event_kind"
+                            android:textColor="#b6b6b6"
+                            android:textSize="@dimen/cavs_small_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_advert_job_event_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#eaeaea" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--Short Description of Job-->
+                <TextView
+                    android:id="@+id/tv_advert_job_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:text="@string/cavs_no_desc"
+                    android:textColor="@color/cavs_neutral_dark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/cavs_card_bottom"
+                    android:layout_marginLeft="@dimen/cavs_10dp_spacing"
+                    android:layout_marginRight="@dimen/cavs_10dp_spacing"
+                    android:layout_marginTop="@dimen/cavs_10dp_spacing"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!--Apply Button-->
+                    <Button
+                        android:id="@+id/bt_advert_job_apply"
+                        android:layout_width="@dimen/cavs_medium_button_width"
+                        android:layout_height="wrap_content"
+                        android:background="@color/cavs_card_button"
+                        android:text="@string/cavs_btn_apply"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/cavs_medium_button_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Bottom Content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cavs_card_bottom"
+            android:layout_gravity="bottom"
+            android:background="@drawable/container_rounded"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/cavs_first_indent"
+                android:paddingRight="@dimen/cavs_first_indent"
+                android:paddingStart="@dimen/cavs_first_indent"
+                android:text="@string/cavs_job_ad_posted_on_placeholder"
+                android:textColor="@color/cavs_neutral_dark"
+                android:textSize="@dimen/cavs_card_extra_text_size" />
+
+            <!--Date the advert was posted on-->
+            <TextView
+                android:id="@+id/tv_advert_job_datePosted"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/cavs_first_indent"
+                android:paddingRight="@dimen/cavs_first_indent"
+                android:paddingStart="@dimen/cavs_first_indent"
+                android:text="@string/cavs_job_ad_posted_day_placeholder"
+                android:textColor="@color/cavs_neutral_dark"
+                android:textSize="@dimen/cavs_card_extra_text_size" />
+
+            <!--General Location of job-->
+            <TextView
+                android:id="@+id/tv_advert_job_location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:paddingLeft="@dimen/cavs_first_indent"
+                android:paddingRight="@dimen/cavs_first_indent"
+                android:paddingStart="@dimen/cavs_first_indent"
+                android:text="@string/cavs_job_ad_no_event_placeholder"
+                android:textColor="@color/cavs_neutral_dark"
+                android:textSize="@dimen/cavs_card_extra_text_size"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
