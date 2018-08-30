@@ -10,3 +10,6 @@ Charlotte Gurfer https://github.kcl.ac.uk/k1502744
 Simone Sharpe https://github.com/simonejrsharpe
 Mahmood Rizwan https://github.kcl.ac.uk/k1502441
 James Rich https://github.kcl.ac.uk/k1462013
+
+
+The software is written in Java and CSS targeting Android as platform.
